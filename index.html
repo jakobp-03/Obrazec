@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sl">
+   <head>
+        <title>Obrazec</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="image/favicon.ico"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    </head>
+   <body>
+    <span class="dot"><a id="dot" href="info.html" style="display: block">i</a></span>
+      <form>
+          <div class="image"></div>
+          <div class="image2"></div>
+         <hr>
+         <h3 >PRIJAVA ZA VPIS V POSLOVNI REGISTER SLOVENIJE ZA DEL POSLOVNEGA SUBJEKTA <sup></sup></h3>
+         <div class="a"><input type="radio" id="vpis" name="group1"  required><label for="vpis">Vpis dela poslovnega subjekta  </label></div>
+         <div class="a"><input type="radio" id="sprememba" name="group1"  required><label for="sprememba"> sprememba dela poslovnega subjekta<sup>1</sup></label></div>
+         <input type="radio" id="izbris" name="group1"  required>
+         <div class="a"><label for="izbris">izbris dela poslovnega subjekta<sup>2</sup></label></div>
+         <br>
+         <div class="h">
+            <div class="f">
+               <h4 >PODATKI O POSLOVNEM SUBJEKTU<sup></sup></h4>
+               <label for="matst">Matična Številka:</label> <input type="text" id="matst" name="matst1" pattern="[0-9]{10}" maxlength = "10" required placeholder="" style="width: 323px" ><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+               <label for="firma" style="line-height: 2.5">Firma: </label><input type="text" id="firma" name="firm" required placeholder="" style="width: 400px" maxlength = "250"><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+               <h4 >PODATKI O DELU POSLOVNEGA SUBJEKTA<sup></sup></h4>
+               <label for="matstd">Matična številka dela</label><sup>3</sup>: &nbsp;<input type="text" id="matstd" name="matst2" pattern="[0-9]{10}" maxlength = "10" placeholder="" style="width: 277px"><br>
+               <label for="imed"> Popolno ime dela<sup>4</sup>:</label> &nbsp;<input type="text" id="imed" name="ime" required placeholder="" style="width: 305px" maxlength = "250"><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+               <label for="simed">Skrajšano ime dela<sup>5</sup>:</label> &nbsp;<input type="text" id="simed" name="sime" placeholder="" style="width: 295px" maxlength = "15"><br>
+               <label for="pnaslov" style="line-height: 2.5">Poslovni naslov dela<sup>6</sup>:</label> &nbsp;<input type="text" id="pnaslov" name="naslov" required placeholder="Ulica" style="width: 285px" maxlength = "50"><span class="red"><sup style="font-size: 17px">*</sup></span>
+               &nbsp; <input type="text" id="postst" name="postst"  placeholder="Poštna št" style="width: 90px" pattern="[0-9]{4}" maxlength="4"><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+               <h4 >PODATKI O ZASTOPNIKU DELA<sup>7</sup></h4>
+               <label for="imeinprim">Ime in priimek: </label>&nbsp;<input type="text" id="imeinprim" name="imeinp"  placeholder="" style="width: 337px" maxlength = "50"><br>
+               <label for="emsod">EMŠO ali davčna številka: </label>&nbsp;<input type="text" id="emsod" name="emso"  pattern="[0-9]{12,13}" placeholder="" maxlength = "13" style="width: 263px"><br>
+               <label for="sprebiv" style="line-height: 2.5">Stalno/začasno prebivališče: </label>&nbsp;<span class="wb"><input type="text" id="sprebiv" name="prebiv"  placeholder="Ulica" style="width: 115px" maxlength = "50"></span> &nbsp;<span class="wbi"><input type="text" id="kprebiv" name="prebivk"  placeholder="Kraj" style="width: 115px" maxlength = "50" > &nbsp;&nbsp;   <input type="text" id="postst" name="postst2"  placeholder="Poštna št" pattern="[0-9]{4}" maxlength="4" style="width: 90px"></span><br>
+               <h4 >KONTAKTNI PODATKI<sup>8</sup></h4>
+               <label for="tele">Telefon: </label>&nbsp;<input type="text" id="tele" name="tel"  placeholder="" pattern="[0-9]{9}" maxlength = "12" style="width: 385px"><br>
+               <label for="elep">Elektronska pošta: </label>&nbsp;<input type="email" id="elep" name="text"  placeholder=""  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" style="width: 310px" maxlength="50"><br>
+               <label for="splet">Spletni naslov:</label>&nbsp;<input type="text" id="splet" name="sn" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" placeholder="" style="width: 343px"><br>
+            </div>
+         </div>
+         Želim, da so kontaktni podatki javno objavleni<span class="red"><sup style="font-size: 17px">*</sup></span><input type="radio" id="opcija2.1" name="group2" value="DA" required><label for="opcija2.1">DA &nbsp; </label><input type="radio" id="opcija2.2" name="group2" value="NE" required><label for="opcija2.2">NE</label><br>
+         <h4 >REGISTRIRANE DEJAVNOSTI DELA PO STANDARDNI KLASIFIKACIJI DEJAVNOSTI (SKD)<sup>9</sup></h4>
+         <div class="flex-container">
+            <div style="padding-right: 15px">
+               <div class="h">
+                  <div class="f">
+                     <div class="bolder">Glavna dejavnost:</div>
+                     <label for="sifrap1">Šifra podrazreda SKD: 1.</label>&nbsp;<input type="text" pattern="^\d*(\.\d{3})?$"  id="sifrap1" name="sifra1" placeholder="11.123" maxlength = "6" required><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+                     <label for="nazivp1">Naziv podrazreda SKD: </label>&nbsp; <input type="text" id="nazivp1" name="naziv1" placeholder="" required style="width: 200px" ><span class="red"><sup style="font-size: 17px">*</sup></span><br>
+                     <div class="bolder">Druge dejavnosti:</div>
+                     <span class="c">Šifra</span>
+                     <span class="c">Naziv</span><br>
+                     2.
+                     <input type="text"  pattern="^\d*(\.\d{3})?$" id="sifra2" name="sifra2" placeholder="11.123" maxlength = "6" style=" width: 55px">
+                     &nbsp;<span class="s"><input type="text" id="naziv2" name="naziv2" placeholder="" style="width: 220px" ></span><br>
+                     3.
+                     <input type="text"  placeholder="11.123"   pattern="^\d*(\.\d{3})?$" id="sifra3" name="sifra3" maxlength = "6" style="width: 55px;" >
+                     &nbsp;<span class="s"><input type="text" id="naziv3" name="naziv3" placeholder="" style="width: 220px" ></span>
+                  </div>
+                  <br>
+               </div>
+               Opombe:
+               <br>
+               <textarea id="opombe" name="opombe"></textarea>
+            </div>
+            <br>
+            <div class="fbox">
+               <div class="bolder">Prijavo izpolnil:<span class="red"><sup style="font-size: 17px">*</sup></span></div>
+               <input type="radio" id="opcija3.1" name="group3" value="OdgO" required>
+               <label for="opcija3.1">Odgovorna oseba poslovnega subjekta:</label><br>
+               <div class="h">
+                  <div class="f">
+                     <input type="text" id="ImeiP2" name="ImeP2" placeholder="Ime in priimek" style="width: 300px">
+                  </div>
+               </div>
+               <input type="radio" id="opcija3.2" name="group3" value="PobO" required> <label for="opcija3.2">Pooblaščenec poslovnega subjekta:</label>
+               <br>
+               <div class="h">
+                  <div class="f">
+                     <input type="text" id="ImeP3" name="ImeP3" placeholder="Ime in priimek" style="width: 300px">
+                  </div>
+               </div>
+               <span class="bolder">Prijavi so priložene naslednje priloge:</span>
+               <br>
+               <input type="checkbox" id="aktRO" name="aktOrg"><label for="aktRO"> Akt registerskega organa<sup>10</sup></label>
+               <br>
+               <input type="checkbox" id="pobZVP" name="poblastvp"> <label for="pobZVP">Pooblastilo za vložitev prijave<sup>11</sup></label>
+               <br>
+               <input type="checkbox" id="drugo" name="drugi"> <label for="drugo">Drugo:</label> <br>
+               <textarea id="opombe2" name="opombe2" style="height:80px"></textarea>
+               <br>
+               <input type="file" id="file" name="file" multiple  style="font-size: 15px;">
+               <br>
+               <div class="date">Datum:<span class="red"><sup style="font-size: 17px"></sup></span> &nbsp;    
+               <input type="date" id="datePicker" name="date" style="font-size:16px; width: 160px" required></div>
+            </div>
+         </div>
+         <div class="f">
+            <div class="h"><input type="submit" id="submit" name="submit" ></div>
+         </div>
+      </form>
+       <script>
+    document.getElementById("datePicker").readOnly = true;
+    document.getElementById('datePicker').valueAsDate = new Date();
+    </script>
+   </body>
+</html>
